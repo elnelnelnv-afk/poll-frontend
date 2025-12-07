@@ -1,0 +1,98 @@
+/* Container */
+.form-container {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #0056b3;
+}
+
+/* Label */
+.form-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Inputs */
+.option-input,
+.question-input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.question-input {
+    border-radius: 8px;
+}
+
+/* Options layout */
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.option-input-container {
+    display: flex;
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Submit button */
+.form-button {
+    width: 101%;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add option button */
+.add-button {
+    width: 130px;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #5298ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #3481ad;
+}
+
+/* Remove option button */
+.remove-button {
+    width: 24px;
+    height: 41px;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: #5298c0;
+    color: #ffffff;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}

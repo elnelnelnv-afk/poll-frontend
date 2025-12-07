@@ -1,0 +1,63 @@
+/* Overall Result Container */
+.result-container {
+    max-width: 400px;
+    margin: 5px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header / Title */
+.result-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+/* Each question block */
+.result-card {
+    margin-bottom: 20px;
+}
+
+/* Question text */
+.question {
+    margin: 25px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Option box */
+.option {
+    margin-bottom: 20px;
+    border: 1px solid #d2d4d4;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Option label */
+.option-name {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* Vote count */
+.vote-count {
+    float: right;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Percentage text */
+.vote-percentage {
+    float: right;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Progress bar container */
+.progress-bar {
+    display: block;
+    margin: 10px 0 5px 0;
+}

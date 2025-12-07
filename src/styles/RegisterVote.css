@@ -1,0 +1,74 @@
+/* Poll container */
+.poll-container {
+    background-color: white;
+    max-width: 400px;
+    margin: 5px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #0056b3;
+}
+
+/* Question text */
+.poll-question {
+    margin: 25px 15px;
+    text-align: center;
+}
+
+/* Options grid */
+.options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+/* Option button */
+.option-button {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #0056b3;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Vote count */
+.vote-count {
+    margin-left: 5px;
+    color: red;
+    font-size: 14px;
+}
+
+/* Error message */
+.error {
+    color: red;
+}
+
+/* Submit button */
+.submit-button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid #21a03f;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #21a03f;
+}
