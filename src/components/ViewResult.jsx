@@ -13,7 +13,7 @@ console.log(poll);
             const { data } = await axios.get("http://localhost:8001/polls/fetch");
             setPoll(data)
         } catch (error) {
-            alert(error.response.data)
+            alert(error.response.data.error)
         }
         /*
           This function should be invoked when this component is initialized.
@@ -74,21 +74,21 @@ console.log(poll);
                                     className="vote-count"
                                     data-testid="vote-count"
                                 >
-                                    {/* Display respective votes here */ poll[`option${opt}Votes`]} Votes
+                                    {/* Display respective votes here */ poll[`option${opt}Votes`] ?? 0} Votes
                                 </span>
 
                                 <span
                                     className="vote-percentage"
                                     data-testid="vote-percentage"
                                 >
-                                    ({/* Display respective votePercentage here */poll[`option${opt}Percentage`]}%)
+                                    ({/* Display respective votePercentage here */poll[`option${opt}Percentage`] ?? 0}%)
                                 </span>
 
                                 <LinearProgress
                                     className="progress-bar"
                                     data-testid="progress-bar"
                                     variant="determinate"
-                                    value={poll[`option${opt}Percentage`]}
+                                    value={poll[`option${opt}Percentage`] ?? 0}
                                 />
                             </div>)
                         })

@@ -50,7 +50,7 @@ describe("RegisterVote Component", () => {
     await waitFor(() => {
       expect(axios.patch).toHaveBeenCalledWith(
         "http://localhost:8001/polls/updateVotes",
-        { selectedoption: "option2" }
+        { selectedOption: "option2" }
       );
     });
 
@@ -75,7 +75,7 @@ describe("RegisterVote Component", () => {
     await waitFor(() => {
       expect(axios.patch).toHaveBeenCalledWith(
         "http://localhost:8001/polls/updateVotes",
-        { selectedoption: "option4" }
+        { selectedOption: "option4" }
       );
     });
 

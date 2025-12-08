@@ -45,7 +45,7 @@ const CreatePoll = () => {
             setOptions(["", "", "", ""])
 
         } catch (error) {
-            alert(error.response.data.error)
+            alert(error?.response?.data?.error || error.message || "Please fill in all the fields")
 
         }
 

@@ -50,7 +50,7 @@ const RegisterVote = () => {
           });
           alert(data.message)
         } catch (error) {
-            alert(error.response.data.error)
+            alert(error?.response?.data?.error || error?.message)
         }
         
         /*
